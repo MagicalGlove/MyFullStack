@@ -6,3 +6,10 @@
 2. "npx json-server --watch people.json --port 3001"
 
 I believe that's it, right?.. right?...
+
+
+
+
+### Current Missing Features:
+1. Sorting by age
+2. Update person
