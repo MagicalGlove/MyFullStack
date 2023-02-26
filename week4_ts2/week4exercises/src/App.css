@@ -6,8 +6,6 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -44,14 +42,14 @@
  table {
    width: 100%;
    border: black solid 6px;
-   border-collapse: collapse;
+   /*border-collapse: collapse;*/
    border-radius: 8px;
  }
 
 th, td {
   padding: 12px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid black;
 }
 
 th {

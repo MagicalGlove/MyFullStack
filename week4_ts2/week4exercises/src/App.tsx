@@ -11,11 +11,30 @@ function DisplayName(props: any) {
     </div>
 }
 
+const deletePerson = (id: number) => {
+    fetch(`http://localhost:3001/person/${id}`, {
+        method: 'DELETE'
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Person deleted:', data);
+        })
+        .catch(error => {
+            console.error('There was a problem deleting the person:', error);
+        });
+};
+
 function InputField(props: any) {
 
 
     return <div>
-        <input type="text" value={props.name} onChange={(evt) => props.setName(evt.target.value)}></input>
+        <input className="logo" type="text" value={props.name}
+               onChange={(evt) => props.setName(evt.target.value)}></input>
 
     </div>
 
@@ -23,7 +42,9 @@ function InputField(props: any) {
 
 function PeopleViewer(): ReactElement {
     const [person, setPerson] = useState<Person[]>([])
-    type Person = { id: number, name: string, age: number, city: string }
+    type Person = {
+        id: number, name: string, age: number, city: string, occupation: string
+    }
 
     useEffect(() => {
         fetch("http://localhost:3001/person")
@@ -40,6 +61,8 @@ function PeopleViewer(): ReactElement {
             <th>Name</th>
             <th>Age</th>
             <th>City</th>
+            <th>Occupation</th>
+            <th>Delete Person</th>
             </thead>
             {person.map((person: Person) =>
                 <tr key={person.id}>
@@ -47,6 +70,8 @@ function PeopleViewer(): ReactElement {
                     <td>{person.name}</td>
                     <td>{person.age}</td>
                     <td>{person.city}</td>
+                    <td>{person.occupation}</td>
+                    <td><button onClick={() => deletePerson(person.id)} style={{backgroundColor: 'darkred'}}>X</button></td>
                 </tr>
             )}
         </table>
