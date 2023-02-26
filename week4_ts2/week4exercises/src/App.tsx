@@ -130,7 +130,6 @@ function App() {
                 <DisplayName name={name}></DisplayName>
                 <PeopleViewer/>
 
-
                 <>
                     <form>
                         <label>
