@@ -40,26 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-
- table {
-   width: 100%;
-   border: black solid 6px;
-   border-collapse: collapse;
-   border-radius: 8px;
- }
-
-th, td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-
-tr:hover {
-  background-color: powderblue;
-  color: black;
-}
