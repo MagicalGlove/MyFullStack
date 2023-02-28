@@ -1,34 +1,214 @@
 {
-  "person":[
-    {"id":1,"name":"Ane","age":10,"city":"Frederikssund","occupation":"Student"},
-    {"id":2,"name":"Bent","age":20,"city":"Albertslund","occupation":"Software Engineer"},
-    {"id":3,"name":"Cecilie","age":30,"city":"Hundige","occupation":"Doctor"},
-    {"id":4,"name":"Denis","age":40,"city":"Albertslund","occupation":"Lawyer"},
-    {"id":5,"name":"Erik","age":50,"city":"Frederikssund","occupation":"Professor"},
-    {"id":6,"name":"Finn","age":60,"city":"Hundige","occupation":"Architect"},
-    {"id":7,"name":"Gustav","age":70,"city":"Frederikssund","occupation":"Retired"},
-    {"id":8,"name":"Hans","age":80,"city":"Albertslund","occupation":"Retired"},
-    {"id":9,"name":"Ib","age":90,"city":"Frederikssund","occupation":"Retired"},
-    {"id":10,"name":"Jens","age":10,"city":"Frederikssund","occupation":"Student"},
-    {"id":11,"name":"Kurt","age":11,"city":"Frederikssund","occupation":"Student"},
-    {"id":12,"name":"Lars","age":12,"city":"Albertslund","occupation":"Student"},
-    {"id":13,"name":"Mads","age":13,"city":"Frederikssund","occupation":"Student"},
-    {"id":14,"name":"Nikolaj","age":14,"city":"Frederikssund","occupation":"Student"},
-    {"id":15,"name":"Ole","age":34,"city":"Frederikssund","occupation":"Software Engineer"},
-    {"id":16,"name":"Peter","age":41,"city":"Frederikssund","occupation":"Professor"},
-    {"id":17,"name":"Quintus","age":64,"city":"Albertslund","occupation":"Retired"},
-    {"id":18,"name":"Rasmus","age":34,"city":"Frederikssund","occupation":"Software Engineer"},
-    {"id":19,"name":"Søren","age":23,"city":"Hørsholm","occupation":"Teacher"},
-    {"id":20,"name":"Tobias","age":20,"city":"Frederikssund","occupation":"Student"},
-    {"id":21,"name":"Søren","age":19,"city":"Hørsholm","occupation":"Student"},
-    {"id":22,"name":"Viggo","age":22,"city":"Frederikssund","occupation":"Student"},
-    {"id":23,"name":"William","age":23,"city":"Frederikssund","occupation":"Student"},
-    {"id":24,"name":"Søren","age":19,"city":"Hørsholm","occupation":"Student"},
-    {"id":25,"name":"Yngve","age":25,"city":"Frederikssund","occupation":"Journalist"},
-    {"id":26,"name":"John","age":30,"city":"New York","occupation":"Lawyer"},
-    {"id":27,"name":"Peter","age":50,"city":"Seattle","occupation":"Software Engineer"},
-    {"id":28,"name":"Susan","age":40,"city":"Boston","occupation":"Retired"},
-    {"id":29,"name":"Søren","age":19,"city":"Hørsholm","occupation":"Student"},
-    {"id":30,"name":"Rasmus","age":34,"city":"Frederikssund","occupation":"Programmer"}
+  "person": [
+    {
+      "id": 1,
+      "name": "Ane",
+      "age": 10,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 2,
+      "name": "Bent",
+      "age": 20,
+      "city": "Albertslund",
+      "occupation": "Software Engineer"
+    },
+    {
+      "id": 3,
+      "name": "Cecilie",
+      "age": 30,
+      "city": "Hundige",
+      "occupation": "Doctor"
+    },
+    {
+      "id": 4,
+      "name": "Denis",
+      "age": 40,
+      "city": "Albertslund",
+      "occupation": "Lawyer"
+    },
+    {
+      "id": 5,
+      "name": "Erik",
+      "age": 50,
+      "city": "Frederikssund",
+      "occupation": "Professor"
+    },
+    {
+      "id": 6,
+      "name": "Finn",
+      "age": 60,
+      "city": "Hundige",
+      "occupation": "Architect"
+    },
+    {
+      "id": 7,
+      "name": "Gustav",
+      "age": 70,
+      "city": "Frederikssund",
+      "occupation": "Retired"
+    },
+    {
+      "id": 8,
+      "name": "Hans",
+      "age": 80,
+      "city": "Albertslund",
+      "occupation": "Retired"
+    },
+    {
+      "id": 9,
+      "name": "Ib",
+      "age": 90,
+      "city": "Frederikssund",
+      "occupation": "Retired"
+    },
+    {
+      "id": 10,
+      "name": "Jens",
+      "age": 10,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 11,
+      "name": "Kurt",
+      "age": 11,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 12,
+      "name": "Lars",
+      "age": 12,
+      "city": "Albertslund",
+      "occupation": "Student"
+    },
+    {
+      "id": 13,
+      "name": "Mads",
+      "age": 13,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 14,
+      "name": "Nikolaj",
+      "age": 14,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 15,
+      "name": "Ole",
+      "age": 34,
+      "city": "Frederikssund",
+      "occupation": "Software Engineer"
+    },
+    {
+      "id": 16,
+      "name": "Peter",
+      "age": 41,
+      "city": "Frederikssund",
+      "occupation": "Professor"
+    },
+    {
+      "id": 17,
+      "name": "Quintus",
+      "age": 64,
+      "city": "Albertslund",
+      "occupation": "Retired"
+    },
+    {
+      "id": 18,
+      "name": "Rasmus",
+      "age": 34,
+      "city": "Frederikssund",
+      "occupation": "Software Engineer"
+    },
+    {
+      "id": 19,
+      "name": "Søren",
+      "age": 23,
+      "city": "Hørsholm",
+      "occupation": "Teacher"
+    },
+    {
+      "id": 20,
+      "name": "Tobias",
+      "age": 20,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 21,
+      "name": "Søren",
+      "age": 19,
+      "city": "Hørsholm",
+      "occupation": "Student"
+    },
+    {
+      "id": 22,
+      "name": "Viggo",
+      "age": 22,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 23,
+      "name": "William",
+      "age": 23,
+      "city": "Frederikssund",
+      "occupation": "Student"
+    },
+    {
+      "id": 24,
+      "name": "Søren",
+      "age": 19,
+      "city": "Hørsholm",
+      "occupation": "Student"
+    },
+    {
+      "id": 25,
+      "name": "Yngve",
+      "age": 25,
+      "city": "Frederikssund",
+      "occupation": "Journalist"
+    },
+    {
+      "id": 26,
+      "name": "John",
+      "age": 30,
+      "city": "New York",
+      "occupation": "Lawyer"
+    },
+    {
+      "id": 27,
+      "name": "Peter",
+      "age": 50,
+      "city": "Seattle",
+      "occupation": "Software Engineer"
+    },
+    {
+      "id": 28,
+      "name": "Susan",
+      "age": 40,
+      "city": "Boston",
+      "occupation": "Retired"
+    },
+    {
+      "id": 29,
+      "name": "Søren",
+      "age": 19,
+      "city": "Hørsholm",
+      "occupation": "Student"
+    },
+    {
+      "id": "31",
+      "name": "Jen",
+      "age": "20",
+      "city": "BoBy",
+      "occupation": "Hacker"
+    }
   ]
 }

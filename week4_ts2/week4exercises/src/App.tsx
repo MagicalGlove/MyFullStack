@@ -10,6 +10,7 @@ type Person = {
     id: number, name: string, age: number, city: string, occupation: string
 }
 
+const httpLink = "http://localhost:3008/person"
 
 function DisplayName(props: any) {
     return <div>
@@ -17,8 +18,31 @@ function DisplayName(props: any) {
     </div>
 }
 
+const editPerson = (person: Person) => {
+    console.log(person)
+    fetch(`${httpLink}/${person.id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(person)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Person edited:', data);
+        })
+        .catch(error => {
+            console.error('There was a problem editing the person:', error);
+        });
+};
+
 const createPerson = (person: Person) => {
-    fetch('http://localhost:3001/person', {
+    fetch(httpLink, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -41,7 +65,7 @@ const createPerson = (person: Person) => {
 
 
 const deletePerson = (id: number) => {
-    fetch(`http://localhost:3001/person/${id}`, {
+    fetch(`${httpLink}/${id}`, {
         method: 'DELETE'
     })
         .then(response => {
@@ -75,11 +99,11 @@ function PeopleViewer(): ReactElement {
 
 
     useEffect(() => {
-        fetch("http://localhost:3001/person")
+        fetch(httpLink)
             .then((res) => res.json())
             .then((res) => setPerson(res))
 
-    }, [])
+    }, [update])
 
     return <div>
 
@@ -135,7 +159,7 @@ function App() {
                         <label>
                             Id:
                             <br/>
-                            <input type="text" name="Id" placeholder="id" value={personBeingCreated.id}
+                            <input type="number" name="id" placeholder="id" value={personBeingCreated.id}
                                    onChange={handleChange}/>
                         </label>
                         <br/>
@@ -168,8 +192,10 @@ function App() {
                         </label>
                     </form>
                     <br/>
-                    <button style={{backgroundColor: 'darkgreen'}} className="createAndEditDogsButtons" onClick={() => createPerson(personBeingCreated)}>Create Person!
-                    </button>
+                    <div>
+                    <button className="createAndEditDogsButtons" onClick={() => createPerson(personBeingCreated)}>Create Person!</button>
+                    <button className="createAndEditDogsButtons" onClick={() => editPerson(personBeingCreated)}>Edit Person!</button>
+                    </div>
 
                 </>
 

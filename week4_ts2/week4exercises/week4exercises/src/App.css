@@ -6,6 +6,8 @@
 }
 
 .logo {
+  height: 6em;
+  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -37,33 +39,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
- table {
-   width: 100%;
-   border: black solid 6px;
-   /*border-collapse: collapse;*/
-   border-radius: 8px;
- }
-
-th, td {
-  padding: 12px;
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-
-tr:hover {
-  background-color: powderblue;
-  color: black;
-}
-
-.createAndEditDogsButtons {
-  background-color: forestgreen;
-  border: darkgreen solid 2px;
-  margin: 10px;
 }
