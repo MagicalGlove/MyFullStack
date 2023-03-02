@@ -103,7 +103,7 @@ function PeopleViewer(): ReactElement {
             .then((res) => res.json())
             .then((res) => setPerson(res))
 
-    }, [update])
+    }, [])
 
     return <div>
 
