@@ -1,7 +1,8 @@
 # Fullstack Backend Start-code
 
+## -- Most changes take place in personController and personRouter
 
-## Technologies used
+# Technologies used
 
 - Node.js
 - TypeScript
