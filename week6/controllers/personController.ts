@@ -54,7 +54,7 @@ export const createPerson = async (req: Request, res: Response) => {
         const { name, age } = req.body;
         const rawData = fs.readFileSync('person.json');
         const people = JSON.parse(rawData);
-        const newPerson = { id: generateRandomId(), name, age }; //I have my fun :D
+        const newPerson = { id: generateRandomId(), name, age }; //I have my fun :D. Auto increment is too risk-free
         people.push(newPerson);
         fs.writeFileSync('person.json', JSON.stringify(people, null, 2));
         return res.status(201).json({

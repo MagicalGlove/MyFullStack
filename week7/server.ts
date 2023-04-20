@@ -1,5 +1,8 @@
 import app from './app';
 import mongoose, { mongo } from 'mongoose';
+import * as dotenv from "dotenv"
+
+dotenv.config()
 
 // Run: npm run start:dev
 
