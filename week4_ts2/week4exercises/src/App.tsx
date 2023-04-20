@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 //Json endpoints are premade. Link/person post, link/person get, link/person/id put, link/person
-//To run json-server locally (Be in the right folder): npx json-server --watch people.json --port 3001
+//To run json-server locally (Be in the right folder): npx json-server --watch person.json --port 3001
 
 
 type Person = {
