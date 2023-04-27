@@ -1,15 +1,14 @@
-# Week 4: Typescript 2
+# Fullstack Backend Start-code
 
-## Objectives
+# Technologies used
 
-- 
-
-## How to prepare before class
-
-
-## Class Exercise 1
-
-## Class Exercise 2
-
-## Topic 1:
+- Node.js
+- TypeScript
+- Express
+- MongoDB Atlas
+- Mongoose
+- log4js
+- dotenv
+- morgan
+- nodemon
 
