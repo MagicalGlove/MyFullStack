@@ -3,15 +3,24 @@ type Person = {
   name: string;
   age: number;
   dream: string;
+  address: Address;
+};
+
+type Address = {
+  id: string;
+  street: string;
+  city: string;
+  people: Person[];
 };
 
 type Context = {
   people: Person[];
+  addresses: Address[];
 };
 
 type Args = {
   id: string;
-  input: Person;
+  input: Person | Address;
 };
 
-export type { Person  , Context, Args };
+export type { Person, Address , Context, Args };

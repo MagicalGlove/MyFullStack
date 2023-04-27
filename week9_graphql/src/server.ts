@@ -8,8 +8,9 @@ import bodyParser from 'body-parser';
 import Person from './resolvers/Person';
 import typeDefs from './schema';
 import person from './resolvers/Person';
-import { people } from './data';
+import { addresses, people } from './data';
 import Query from './resolvers/query';
+import Mutation from './resolvers/Mutation';
 
 
 
@@ -53,6 +54,9 @@ app.use(
   expressMiddleware(server, {
     context: async () => ({
       people,
+      addresses,
+      Mutation,
+      Query
     }),
   }),
 );

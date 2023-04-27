@@ -112,5 +112,86 @@ export const people = [
     'name': 'Søren',
     'age': 25,
     'dream': 'Søren s dream is to become the first person to set foot on Mars.',
+    'address': {
+      id: 1,
+      street: '123 Main St',
+      city: 'Anytown',
+    },
   }];
+
+export const addresses = [
+  {
+    id: 1,
+    street: '123 Main St',
+    city: 'Anytown',
+    people: [],
+  },
+  {
+    id: 2,
+    street: '456 Elm St',
+    city: 'Otherville',
+    people: [],
+  },
+  {
+    id: 3,
+    street: '789 Maple Ave',
+    city: 'Smallville',
+    people: [],
+  },
+  {
+    id: 4,
+    street: '10 Downing St',
+    city: 'London',
+    people: [],
+  },
+  {
+    id: 5,
+    street: '1600 Pennsylvania Ave NW',
+    city: 'Washington D.C.',
+    people: [],
+  },
+  {
+    id: 6,
+    street: '1 Infinite Loop',
+    city: 'Cupertino',
+    people: [],
+  },
+  {
+    id: 7,
+    street: '1600 Amphitheatre Pkwy',
+    city: 'Mountain View',
+    people: [],
+  },
+  {
+    id: 8,
+    street: '6333 W 3rd St',
+    city: 'Los Angeles',
+    people: [],
+  },
+  {
+    id: 9,
+    street: '1 Hacker Way',
+    city: 'Menlo Park',
+    people: [],
+  },
+  {
+    id: 10,
+    street: '1 Microsoft Way',
+    city: 'Redmond',
+
+    people: [
+      {
+        'id': 18,
+        'name': 'Rasmus',
+        'age': 34,
+        'dream': 'To become a famous actor',
+      },
+      {
+        'id': 19,
+        'name': 'Søren',
+        'age': 25,
+        'dream': 'Søren s dream is to become the first person to set foot on Mars.',
+      }],
+  },
+];
 

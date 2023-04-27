@@ -7,6 +7,14 @@ const typeDefs = `#graphql
     name: String!
     age: String!
     dream: String
+    address: Address
+  }
+  
+  type Address {
+    id: ID!
+    street: String!
+    city: String!
+    people: [Person]
   }
 
   # The "Query" type is special: it lists all of the available queries that
@@ -15,7 +23,7 @@ const typeDefs = `#graphql
   # The "books" query accepts an optional "author" argument of type String. And returns a list always (even if it's empty). Never null. And content will allways be a Book object or empty. never null.
   type Query {
     people: [Person!]!
-    
+    addresses: [Address!]!
   }
  
   # type Mutation {
