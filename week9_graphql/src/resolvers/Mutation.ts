@@ -1,4 +1,5 @@
 import { Person, Address, Context, Args } from '../types';
+import { addresses } from '../data';
 
 export default {
   createPerson: (_parent: never, { input }: Args, { people }: Context) => {
@@ -14,8 +15,19 @@ export default {
       people.push(newPerson);
       return newPerson;
     } else {
+      console.log("MonkeyTime");
       return null;
     }
-
+  },createAddress: (parent: Address, { input }: Args, { addresses }: Context) => {
+    if ('street' in input) {
+      const address: Address = {
+        id: String(addresses.length + 1),
+        street: input.street,
+        city: input.city,
+        people: input.people
+      }
+      addresses.push(address)
+      return address;
+    }
   },
 };

@@ -26,13 +26,21 @@ const typeDefs = `#graphql
     addresses: [Address!]!
   }
  
-  # type Mutation {
-    # createBook(input: BookInput!): Book
-    # createRating(input: RatingInput!): Rating
-    # deleteBook(id: ID!): Boolean
-    # updateBook(id: ID!, input: BookInput!): Book
-  # }
-  
-`;
+  type Mutation {
+  createPerson(input: PersonInput!): Person
+  createAddress(input: AddressInput!): Address
+}
+
+input PersonInput {
+  name: String!
+  age: Int!
+  dream: String
+  address: AddressInput
+}
+
+input AddressInput {
+  street: String!
+  city: String!
+}`;
 
 export default typeDefs;
