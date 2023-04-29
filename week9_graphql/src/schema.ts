@@ -26,10 +26,13 @@ const typeDefs = `#graphql
     addresses: [Address!]!
   }
  
-  type Mutation {
-  createPerson(input: PersonInput!): Person
-  createAddress(input: AddressInput!): Address
-}
+   type Mutation {
+    createPerson(input: PersonInput!): Person
+    createAddress(input: AddressInput!): Address
+    addPersonToAddress(personId: ID!, addressId: ID!): Address
+    removePersonFromAddress(personId: ID!, addressId: ID!): Address
+    deletePerson(id: ID!): Person
+  }
 
 input PersonInput {
   name: String!

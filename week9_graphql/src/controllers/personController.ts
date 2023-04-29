@@ -2,8 +2,6 @@ import { Request, Response } from 'express';
 import mongoose, { Schema, Document } from 'mongoose';
 import Person from '../models/personModel';
 
-const fs = require('fs');
-
 type person = {
   _id?: mongoose.Types.ObjectId;
   name: string;
